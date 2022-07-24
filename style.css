@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+body,html{
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    font-family: 'Kanit', sans-serif!important;
+    background-color: #668683;
+}
+
+/*-------------------- Home Page -------------------- */
+.intro-img{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Img/alyani-yang-WajET_vzPmI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.intro-text{
+    padding: 50px;
+    color: #fff;
+    font-size: 2.3rem;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    animation: Slide_Up 2s ease;
+}
+
+.intro-text button{
+    font-family: 'Kanit', sans-serif!important;
+    margin-top: 50px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #ffff;
+    background-color: #11342e;
+    text-align: center;
+    cursor: pointer;
+}
+
+.intro-text button:hover{
+    background-color: #102925;
+}
+
+/*-------------------- List Of Contents -------------------- */
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.topic{
+    text-align: center;
+    align-items: center;
+}
+
+.topic h1{
+    border-bottom: 2px solid #11342e;
+    display: flex;
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #11342e;
+}
+
+.topic h2{
+    border-bottom: 2px solid #11342e;
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #11342e;
+}
+
+.description{
+    margin-bottom: 40px;
+    font-family: 'Taviraj', serif;
+    color: #fff;
+    border-radius: 20px;
+    width: 50%;
+    background-color: #456661;
+    padding: 0 400px;
+    font-size: 24px;
+}
+
+.description p a{
+    text-decoration: none;
+    color: #11342e;
+}
+
+@media (max-width: 1280px){
+    .description{
+        padding: 0 50px;
+    }
+}
+
+.herbs{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.herb-info{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 20px 20px 10px rgba(17, 52, 46,0.25);
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.herb-info:hover{
+    transform: scale(1.08);
+    transition-duration: 0.1s;
+}
+
+.herb-info img{
+    filter: grayscale(5%);
+    width: 200px;
+    height: 160px;
+}
+
+.herb-info h2{
+    padding: 2px;
+    border-top: 1px solid #cecece;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #cecece;
+    color: #214843;
+}
+
+.reference{
+    color: #11342e;
+}
+
+.reference a:hover{
+    color: #ffffff;
+}
+
+h1,h2{
+    margin: 0;
+}
+
+@keyframes Slide_Up{
+    100%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+    
+    0%{
+        opacity: 0;
+        transform: translate(-50%,0);
+    }
+}
